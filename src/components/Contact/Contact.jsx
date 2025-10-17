@@ -13,7 +13,7 @@ const Contact = () => {
           <p>Let’s connect! You can reach me through:</p>
           <div className="contact-links">
             <a href="mailto:yourmail@gmail.com" target="_blank" rel="noreferrer">
-              <FaEnvelope className="icon" /> yourmail@gmail.com
+              <FaEnvelope className="icon" /> malabalaganesh@gmail.com
             </a>
             <a
               href="https://wa.me/919999999999"
@@ -23,7 +23,7 @@ const Contact = () => {
               <FaWhatsapp className="icon" /> WhatsApp
             </a>
             <a
-              href="https://www.linkedin.com/in/yourlinkedin/"
+              href="https://www.linkedin.com/in/mala-balaganesh/"
               target="_blank"
               rel="noreferrer"
             >
@@ -32,7 +32,6 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* Right Side - Contact Form */}
         <form
           className="contact-form"
           action="https://formspree.io/f/xaykzqyr" 
