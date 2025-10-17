@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+.education-section {
+  background-color: #fff;
+  color: #000;
+  padding: 100px 20px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.education-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 60px;
+  letter-spacing: 1px;
+}
+
+/* Timeline layout */
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 1px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 25px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background-color: #000;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 50px;
+  padding-left: 60px;
+  text-align: left;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 17px;
+  top: 5px;
+  width: 16px;
+  height: 16px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.timeline-content h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.timeline-date {
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.timeline-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .education-heading {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
+  .timeline-item {
+    padding-left: 50px;
+  }
+
+  .timeline::before {
+    left: 20px;
+  }
+
+  .timeline-dot {
+    left: 12px;
+  }
+
+  .timeline-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .timeline-content p {
+    font-size: 0.95rem;
+  }
+}

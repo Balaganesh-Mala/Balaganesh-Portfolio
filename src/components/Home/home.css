@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* ===== HOME SECTION ===== */
+.home-container {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0)
+    ),
+    url("https://ik.imagekit.io/izqq5ffwt/1760679304251.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: left;
+}
+
+.info-container {
+  padding: 20px;
+  width: 70%;
+  margin-bottom: 60px;
+}
+
+.name {
+  font-size: 80px;
+  font-family: "BBH Sans Hegarty";
+  letter-spacing: 4px;
+  margin: 0;
+}
+
+.name span {
+  color: orange;
+}
+
+.location {
+  font-size: 20px;
+  margin: 10px 0 40px 0;
+  font-weight: 400;
+}
+
+.btn-container {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid orange;
+  color: white;
+  background: transparent;
+}
+
+.btn-orange {
+  background: orange;
+  border-color: orange;
+}
+
+.btn:hover {
+  background: white;
+  color: black;
+}
+
+
+@media (max-width: 768px) {
+  .info-container {
+    width: 90%;
+  }
+
+  .name {
+    font-size: 55px;
+  }
+
+}
