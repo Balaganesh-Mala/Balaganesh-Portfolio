@@ -162,4 +162,8 @@
   .social-icon {
     font-size: 26px;
   }
+  .social-links{
+    justify-content: center;
+    align-items: center;
+  }
 }

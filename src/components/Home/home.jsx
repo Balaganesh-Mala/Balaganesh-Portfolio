@@ -9,8 +9,7 @@ const Home = () => {
           Bala Ganesh <span>Mala</span>
         </h1>
         <p className="location">
-          Aspiring MERN Stack Developer | CCBPian at NxtWave | Python, SQL,
-          React JS
+          Full Stack Developer (MERN) passionate about crafting responsive, scalable, and user-focused web applications.
         </p>
         <div className="btn-container">
           <button className="btn btn-orange">Hire Me</button>

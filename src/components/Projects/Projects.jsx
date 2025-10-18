@@ -10,7 +10,7 @@ const Projects = () => {
       title: "E-Commerce",
       img: "https://ik.imagekit.io/izqq5ffwt/7897863.jpg",
       desc: "A full-featured online shopping platform with cart, payment, and order tracking.",
-      url: "https://nexttrendhere.ccbp.tech/",
+      url: "https://malanxttrendze.ccbp.tech/",
     },
     {
       title: "E-Learning",
@@ -26,7 +26,7 @@ const Projects = () => {
     },
     {
       title: "NxtWatch (YouTube Clone)",
-      img: "https://ik.imagekit.io/izqq5ffwt/Screenshot%202025-10-17%20160143.png",
+      img: "https://ik.imagekit.io/izqq5ffwt/6350310.jpg",
       desc: "A YouTube-like app with search, video playback, and dark mode support.",
       url: "https://nxtwatch.ccbp.tech/",
     },
