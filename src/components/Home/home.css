@@ -1,98 +1,211 @@
-@import url("https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap");
-
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-  scroll-behavior: smooth;
-}
-
-/* ===== HOME SECTION ===== */
-.home-container {
-  background-image: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.8),
-      rgba(0, 0, 0, 0)
-    ),
-    url("https://ik.imagekit.io/izqq5ffwt/1760679304251.jpg");
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: white;
+/* ========================================= */
+/* MAIN HERO SECTION */
+/* ========================================= */
+.hero-section {
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  text-align: left;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 120px;
+  gap: 50px;
+  min-height: 100vh;
+  background: #ffffff;
 }
 
-.info-container {
-  padding: 20px;
-  width: 70%;
-  margin-bottom: 60px;
+/* ========================================= */
+/* LEFT SIDE */
+/* ========================================= */
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #222;
 }
 
-.name {
-  font-size: 80px;
-  font-family: "BBH Sans Hegarty";
-  letter-spacing: 4px;
-  margin: 0;
+.orange {
+  color: #ff5722;
 }
 
-.name span {
-  color: orange;
+.typing {
+  margin-top: 10px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #444;
 }
 
-.location {
-  font-size: 20px;
-  margin: 10px 0 40px 0;
-  font-weight: 400;
+.cursor {
+  color: #ff5722;
+  animation: blink 0.8s infinite;
 }
 
-.btn-container {
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.description {
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #555;
+  max-width: 480px;
+  line-height: 1.6;
+}
+
+/* ========================================= */
+/* BUTTONS */
+/* ========================================= */
+.hero-buttons {
+  margin-top: 25px;
   display: flex;
   gap: 15px;
-  flex-wrap: wrap;
 }
 
-.btn {
-  padding: 12px 24px;
-  border-radius: 8px;
-  font-size: 16px;
+.btn-primary,
+.btn-outline {
+  padding: 12px 28px;
+  border-radius: 10px;
+  font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;
-  border: 2px solid orange;
-  color: white;
-  background: transparent;
+  transition: .3s ease;
 }
 
-.btn-orange {
-  background: orange;
-  border-color: orange;
+.btn-primary {
+  background: #ff5722;
+  color: #fff;
+  border: none;
 }
 
-.btn:hover {
-  background: white;
-  color: black;
+.btn-primary:hover {
+  background: #e64a19;
 }
 
-
-@media (max-width: 768px) {
-  .info-container {
-    width: 100%;
-  }
-
-  .name {
-    font-size: 55px;
-  }
-
+.btn-outline {
+  border: 2px solid #ff5722;
+  color: #ff5722;
+  text-decoration: none;
 }
-@media (max-width:400px) {
-  .name {
-    font-size: 30px;
+
+.btn-outline:hover {
+  background: rgba(255, 87, 34, 0.1);
+}
+
+/* ========================================= */
+/* RIGHT IMAGE */
+/* ========================================= */
+.image-wrapper {
+  position: relative;
+}
+
+.hero-img {
+  width: 520px;
+  border-radius: 20px;
+  animation: float-img 4s ease-in-out infinite;
+}
+
+@keyframes float-img {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
+}
+
+/* ========================================= */
+/* FLOATING ICONS */
+/* ========================================= */
+.float-icon {
+  width: 60px;
+  position: absolute;
+  opacity: 0.95;
+  animation: float 4s infinite ease-in-out;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+
+/* FIXED DESKTOP ICON POSITIONS */
+.icon1 { top: -35px; left: 10px; }
+.icon2 { top: 20px; right: -20px; }
+.icon3 { bottom: -25px; left: 40px; }
+.icon4 { top: -25px; right: 80px; }
+.icon5 { bottom: 40px; right: -10px; }
+
+/* ========================================= */
+/* RESPONSIVE — TABLET & MOBILE */
+/* ========================================= */
+@media (max-width: 900px) {
+  .hero-section {
+    flex-direction: column-reverse;
+    padding: 40px 20px;
+    text-align: center;
+    gap: 40px;
+    margin-top: 30%;
+    min-height: auto;
   }
-  .location{
-    font-size: 16px;
+
+  .title {
+    font-size: 2.4rem;
   }
+
+  .typing {
+    font-size: 1.4rem;
+  }
+
+  .description {
+    font-size: 0.95rem;
+    max-width: 100%;
+    padding: 0 12px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-img {
+    width: 240px;
+  }
+
+  .float-icon {
+    width: 38px;
+  }
+
+  /* MOBILE icon repositioning (PERFECT CIRCLE LOOK) */
+  .icon1 { top: -15px; left: 35px; }
+  .icon2 { top: 15px; right: 35px; }
+  .icon3 { bottom: -10px; left: 60px; }
+  .icon4 { top: -10px; right: 70px; }
+  .icon5 { bottom: 20px; right: 45px; }
+
+  .image-wrapper {
+    margin-bottom: 20px;
+  }
+}
+
+/* ========================================= */
+/* EXTRA SMALL PHONES — iPhone SE */
+/* ========================================= */
+@media (max-width: 480px) {
+  .hero-section{
+    margin-top: 50%;
+  }
+  .title {
+    font-size: 2rem;
+  }
+
+  .typing {
+    font-size: 1.2rem;
+  }
+
+  .hero-img {
+    width: 300px;
+  }
+
+  .float-icon {
+    width: 30px;
+  }
+
+  .icon1 { top: -12px; left: 25px; }
+  .icon2 { top: 10px; right: 25px; }
+  .icon3 { bottom: -5px; left: 40px; }
+  .icon4 { top: -10px; right: 55px; }
+  .icon5 { bottom: 15px; right: 30px; }
 }
